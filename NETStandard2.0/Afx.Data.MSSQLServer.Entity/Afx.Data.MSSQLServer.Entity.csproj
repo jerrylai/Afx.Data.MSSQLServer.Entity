@@ -1,6 +1,6 @@
 <Project Sdk="Microsoft.NET.Sdk">
   <PropertyGroup>
-    <TargetFramework>netstandard2.1</TargetFramework>
+    <TargetFramework>netstandard2.0</TargetFramework>
     <Authors>jerrylai@aliyun.com</Authors>
     <Version>9.31.3</Version>
     <Company>mycsv.cn</Company>
