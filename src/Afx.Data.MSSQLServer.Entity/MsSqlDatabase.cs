@@ -11,7 +11,7 @@ using System.Data.SqlClient;
 #endif
 using Afx.Data;
 
-namespace Afx.Data.MSSQLServer.Entity.Schema
+namespace Afx.Data.MSSQLServer
 {
     /// <summary>
     /// 获取数据库结构信息
