@@ -1,11 +1,11 @@
 <Project Sdk="Microsoft.NET.Sdk">
   <PropertyGroup>
-    <TargetFramework>netstandard2.0</TargetFramework>
+    <TargetFramework>netstandard2.1</TargetFramework>
     <Authors>jerrylai@aliyun.com</Authors>
     <Version>13.2.1</Version>
     <Company>mycsv.cn</Company>
-    <Product>Afx.Data.MSSQLServer.Entity for .NET Standard 2.0</Product>
-    <Description>Afx.Data.MSSQLServer.Entity for .NET Standard 2.0</Description>
+    <Product>Afx.Data.MSSQLServer.Entity for .NET Standard 2.1</Product>
+    <Description>Afx.Data.MSSQLServer.Entity for .NET Standard 2.1</Description>
     <Copyright>Copyright © mycsv 2018</Copyright>
     <PackageReleaseNotes>Afx.Data.MSSQLServer.Entity for .NET Standard 2.0</PackageReleaseNotes>
     <GeneratePackageOnBuild>false</GeneratePackageOnBuild>
@@ -31,6 +31,6 @@
   <ItemGroup>
     <PackageReference Include="Afx.Data" Version="10.1.0" />
     <PackageReference Include="Afx.Data.Entity" Version="13.2.1" />
-    <PackageReference Include="Microsoft.EntityFrameworkCore.SqlServer" Version="3.1.12" />
+    <PackageReference Include="Microsoft.EntityFrameworkCore.SqlServer" Version="5.0.3" />
   </ItemGroup>
 </Project>
