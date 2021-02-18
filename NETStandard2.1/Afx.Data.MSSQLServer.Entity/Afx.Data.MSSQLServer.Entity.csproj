@@ -2,7 +2,7 @@
   <PropertyGroup>
     <TargetFramework>netstandard2.1</TargetFramework>
     <Authors>jerrylai@aliyun.com</Authors>
-    <Version>13.2.1</Version>
+    <Version>13.2.2</Version>
     <Company>mycsv.cn</Company>
     <Product>Afx.Data.MSSQLServer.Entity for .NET Standard 2.1</Product>
     <Description>Afx.Data.MSSQLServer.Entity for .NET Standard 2.1</Description>
