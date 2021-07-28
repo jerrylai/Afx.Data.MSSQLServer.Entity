@@ -2,7 +2,7 @@
   <PropertyGroup>
     <TargetFramework>netstandard2.1</TargetFramework>
     <Authors>jerrylai@aliyun.com</Authors>
-    <Version>13.2.2</Version>
+    <Version>13.2.3</Version>
     <Company>mycsv.cn</Company>
     <Product>Afx.Data.MSSQLServer.Entity for .NET Standard 2.1</Product>
     <Description>Afx.Data.MSSQLServer.Entity for .NET Standard 2.1</Description>
@@ -30,7 +30,7 @@
   </ItemGroup>
   <ItemGroup>
     <PackageReference Include="Afx.Data" Version="10.1.0" />
-    <PackageReference Include="Afx.Data.Entity" Version="13.2.1" />
+    <PackageReference Include="Afx.Data.Entity" Version="13.2.3" />
     <PackageReference Include="Microsoft.EntityFrameworkCore.SqlServer" Version="5.0.3" />
   </ItemGroup>
 </Project>
