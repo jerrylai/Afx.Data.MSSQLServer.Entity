@@ -37,11 +37,11 @@
     <DocumentationFile>..\..\publish\net40\Afx.Data.MSSQLServer.Entity.xml</DocumentationFile>
   </PropertyGroup>
   <ItemGroup>
-    <Reference Include="Afx.Data, Version=10.1.0.0, Culture=neutral, processorArchitecture=MSIL">
-      <HintPath>..\..\packages\Afx.Data.10.1.0\lib\net40\Afx.Data.dll</HintPath>
+    <Reference Include="Afx.Data, Version=10.2.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\..\packages\Afx.Data.10.2.0\lib\net40\Afx.Data.dll</HintPath>
     </Reference>
-    <Reference Include="Afx.Data.Entity, Version=13.2.5.0, Culture=neutral, processorArchitecture=MSIL">
-      <HintPath>..\..\packages\Afx.Data.Entity.13.2.5\lib\net40\Afx.Data.Entity.dll</HintPath>
+    <Reference Include="Afx.Data.Entity, Version=13.3.1.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\..\packages\Afx.Data.Entity.13.3.1\lib\net40\Afx.Data.Entity.dll</HintPath>
     </Reference>
     <Reference Include="EntityFramework, Version=6.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089, processorArchitecture=MSIL">
       <HintPath>..\..\packages\EntityFramework.6.4.4\lib\net40\EntityFramework.dll</HintPath>
