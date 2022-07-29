@@ -1,18 +1,18 @@
 <Project Sdk="Microsoft.NET.Sdk">
   <PropertyGroup>
-    <TargetFramework>netstandard2.1</TargetFramework>
+    <TargetFramework>net6.0</TargetFramework>
     <Authors>jerrylai@aliyun.com</Authors>
-    <Version>13.3.3</Version>
+    <Version>13.4.0</Version>
     <Company>mycsv.cn</Company>
-    <Product>Afx.Data.MSSQLServer.Entity for .NET Standard 2.1</Product>
-    <Description>Afx.Data.MSSQLServer.Entity for .NET Standard 2.1</Description>
+    <Product>Afx.Data.MSSQLServer.Entity for .NET Standard 6.0</Product>
+    <Description>Afx.Data.MSSQLServer.Entity for .NET Standard 6.0</Description>
     <Copyright>Copyright © mycsv 2018</Copyright>
-    <PackageReleaseNotes>Afx.Data.MSSQLServer.Entity for .NET Standard 2.0</PackageReleaseNotes>
+    <PackageReleaseNotes>Afx.Data.MSSQLServer.Entity for .NET Standard 6.0</PackageReleaseNotes>
     <GeneratePackageOnBuild>false</GeneratePackageOnBuild>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|AnyCPU'">
     <OutputPath>..\..\publish\</OutputPath>
-    <DocumentationFile>..\..\publish\netstandard2.0\Afx.Data.MSSQLServer.Entity.xml</DocumentationFile>
+    <DocumentationFile>..\..\publish\net6.0\Afx.Data.MSSQLServer.Entity.xml</DocumentationFile>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|AnyCPU'">
     <OutputPath>bin\Debug\</OutputPath>
@@ -30,7 +30,7 @@
   </ItemGroup>
   <ItemGroup>
     <PackageReference Include="Afx.Data" Version="10.2.0" />
-    <PackageReference Include="Afx.Data.Entity" Version="13.3.1" />
-    <PackageReference Include="Microsoft.EntityFrameworkCore.SqlServer" Version="5.0.3" />
+    <PackageReference Include="Afx.Data.Entity" Version="13.4.0" />
+    <PackageReference Include="Microsoft.EntityFrameworkCore.SqlServer" Version="6.0.7" />
   </ItemGroup>
 </Project>

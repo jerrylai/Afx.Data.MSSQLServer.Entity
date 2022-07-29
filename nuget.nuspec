@@ -2,7 +2,7 @@
 <package xmlns="http://schemas.microsoft.com/packaging/2013/05/nuspec.xsd">
   <metadata>
     <id>Afx.Data.MSSQLServer.Entity</id>
-    <version>13.3.3</version>
+    <version>13.4.0</version>
     <authors>jerrylai</authors>
     <owners>jerrylai</owners>
     <requireLicenseAcceptance>false</requireLicenseAcceptance>
@@ -11,20 +11,15 @@
     <copyright>jerrylai@aliyun.com</copyright>
     <tags>SQLServer EF EFCore</tags>
     <dependencies>
-      <group targetFramework=".NETFramework4.0">
-        <dependency id="EntityFramework" version="6.4.4" />
-        <dependency id="Afx.Data.Entity" version="13.3.3" />
-        <dependency id="Afx.Data" version="10.2.0" />
-      </group>
-      <group targetFramework=".NETFramework4.5">
-        <dependency id="EntityFramework" version="6.4.4" />
-        <dependency id="Afx.Data.Entity" version="13.3.3" />
-        <dependency id="Afx.Data" version="10.2.0" />
-      </group>
       <group targetFramework=".NETStandard2.0">
-        <dependency id="Afx.Data.Entity" version="13.3.3" />
+        <dependency id="Afx.Data.Entity" version="13.4.0" />
         <dependency id="Afx.Data" version="10.2.0" />
-        <dependency id="Microsoft.EntityFrameworkCore.SqlServer" version="3.1.17" />
+        <dependency id="Microsoft.EntityFrameworkCore.SqlServer" version="3.1.27" />
+      </group>
+      <group targetFramework="net6.0">
+        <dependency id="Afx.Data.Entity" version="13.4.0" />
+        <dependency id="Afx.Data" version="10.2.0" />
+        <dependency id="Microsoft.EntityFrameworkCore.SqlServer" version="6.0.7" />
       </group>
     </dependencies>
   </metadata>
