@@ -10,7 +10,7 @@
     <AppDesignerFolder>Properties</AppDesignerFolder>
     <RootNamespace>Afx.Data.MSSQLServer.Entity</RootNamespace>
     <AssemblyName>Afx.Data.MSSQLServer.Entity</AssemblyName>
-    <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
+    <TargetFrameworkVersion>v4.8</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
     <NuGetPackageImportStamp>
     </NuGetPackageImportStamp>
@@ -21,7 +21,7 @@
     <DebugType>full</DebugType>
     <Optimize>false</Optimize>
     <OutputPath>bin\Debug\</OutputPath>
-    <DefineConstants>TRACE;DEBUG;NET45</DefineConstants>
+    <DefineConstants>TRACE;DEBUG;NET48</DefineConstants>
     <ErrorReport>prompt</ErrorReport>
     <WarningLevel>4</WarningLevel>
     <DocumentationFile>
@@ -30,18 +30,18 @@
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
     <DebugType>pdbonly</DebugType>
     <Optimize>true</Optimize>
-    <OutputPath>..\..\publish\net45\</OutputPath>
-    <DefineConstants>TRACE;NET45</DefineConstants>
+    <OutputPath>..\..\publish\net48\</OutputPath>
+    <DefineConstants>TRACE;NET48</DefineConstants>
     <ErrorReport>prompt</ErrorReport>
     <WarningLevel>4</WarningLevel>
-    <DocumentationFile>..\..\publish\net45\Afx.Data.MSSQLServer.Entity.xml</DocumentationFile>
+    <DocumentationFile>..\..\publish\net48\Afx.Data.MSSQLServer.Entity.xml</DocumentationFile>
   </PropertyGroup>
   <ItemGroup>
-    <Reference Include="Afx.Data, Version=10.2.0.0, Culture=neutral, processorArchitecture=MSIL">
-      <HintPath>..\..\packages\Afx.Data.10.2.0\lib\net45\Afx.Data.dll</HintPath>
+    <Reference Include="Afx.Data, Version=11.0.1.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\..\packages\Afx.Data.11.0.1\lib\net48\Afx.Data.dll</HintPath>
     </Reference>
-    <Reference Include="Afx.Data.Entity, Version=13.3.1.0, Culture=neutral, processorArchitecture=MSIL">
-      <HintPath>..\..\packages\Afx.Data.Entity.13.3.1\lib\net45\Afx.Data.Entity.dll</HintPath>
+    <Reference Include="Afx.Data.Entity, Version=15.0.1.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\..\packages\Afx.Data.Entity.15.0.1\lib\net48\Afx.Data.Entity.dll</HintPath>
     </Reference>
     <Reference Include="EntityFramework, Version=6.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089, processorArchitecture=MSIL">
       <HintPath>..\..\packages\EntityFramework.6.4.4\lib\net45\EntityFramework.dll</HintPath>
@@ -63,14 +63,8 @@
     <Compile Include="..\..\src\Afx.Data.MSSQLServer.Entity\Properties\AssemblyInfo.cs">
       <Link>Properties\AssemblyInfo.cs</Link>
     </Compile>
-    <Compile Include="..\..\src\Afx.Data.MSSQLServer.Entity\Schema\MsSqlDatabaseSchema.cs">
-      <Link>Schema\MsSqlDatabaseSchema.cs</Link>
-    </Compile>
     <Compile Include="..\..\src\Afx.Data.MSSQLServer.Entity\Schema\MsSqlModelSchema.cs">
       <Link>Schema\MsSqlModelSchema.cs</Link>
-    </Compile>
-    <Compile Include="..\..\src\Afx.Data.MSSQLServer.Entity\Schema\MsSqlTableSchema.cs">
-      <Link>Schema\MsSqlTableSchema.cs</Link>
     </Compile>
   </ItemGroup>
   <ItemGroup>

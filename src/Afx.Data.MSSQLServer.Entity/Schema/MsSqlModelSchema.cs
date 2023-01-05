@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using Afx.Data.Entity.Schema;
+using Afx.Data.Schema;
 
 namespace Afx.Data.MSSQLServer.Entity.Schema
 {

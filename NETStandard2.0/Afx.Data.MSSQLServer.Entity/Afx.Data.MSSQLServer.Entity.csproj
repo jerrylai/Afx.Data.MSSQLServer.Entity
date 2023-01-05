@@ -2,7 +2,7 @@
   <PropertyGroup>
     <TargetFramework>netstandard2.0</TargetFramework>
     <Authors>jerrylai@aliyun.com</Authors>
-    <Version>13.4.0</Version>
+    <Version>15.0.1</Version>
     <Company>mycsv.cn</Company>
     <Product>Afx.Data.MSSQLServer.Entity for .NET Standard 2.0</Product>
     <Description>Afx.Data.MSSQLServer.Entity for .NET Standard 2.0</Description>
@@ -21,16 +21,13 @@
   </PropertyGroup>
   <ItemGroup>
     <Compile Include="..\..\src\Afx.Data.MSSQLServer.Entity\MsSqlDatabase.cs" Link="MsSqlDatabase.cs" />
-    <Compile Include="..\..\src\Afx.Data.MSSQLServer.Entity\Schema\MsSqlDatabaseSchema.cs" Link="Schema\MsSqlDatabaseSchema.cs" />
     <Compile Include="..\..\src\Afx.Data.MSSQLServer.Entity\Schema\MsSqlModelSchema.cs" Link="Schema\MsSqlModelSchema.cs" />
-    <Compile Include="..\..\src\Afx.Data.MSSQLServer.Entity\Schema\MsSqlTableSchema.cs" Link="Schema\MsSqlTableSchema.cs" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="Schema\" />
   </ItemGroup>
   <ItemGroup>
-    <PackageReference Include="Afx.Data" Version="10.2.0" />
-    <PackageReference Include="Afx.Data.Entity" Version="13.4.0" />
-    <PackageReference Include="Microsoft.EntityFrameworkCore.SqlServer" Version="3.1.27" />
+    <PackageReference Include="Afx.Data.Entity" Version="15.0.1" />
+    <PackageReference Include="Microsoft.EntityFrameworkCore.SqlServer" Version="3.1.32" />
   </ItemGroup>
 </Project>

@@ -4,6 +4,7 @@ using System.Linq;
 using System.Text;
 using System.Data;
 using System.Data.Common;
+using Afx.Data.Schema;
 #if NETCOREAPP || NETSTANDARD
 using Microsoft.Data.SqlClient;
 #else
@@ -47,6 +48,32 @@ namespace Afx.Data.MSSQLServer
         {
             if (string.IsNullOrEmpty(name)) throw new ArgumentNullException("name");
             return string.Format("@{0}", name);
+        }
+
+        /// <summary>
+        /// 
+        /// </summary>
+        /// <returns></returns>
+        protected override ITableSchema GeTableSchema()
+        {
+            var connectionStringBuilder = new SqlConnectionStringBuilder(this.ConnectionString);
+            return new MsSqlServerTableSchema(new MsSqlDatabase(this.ConnectionString), connectionStringBuilder.InitialCatalog);
+        }
+        /// <summary>
+        /// 
+        /// </summary>
+        /// <returns></returns>
+        protected override IDatabaseSchema GetDatabaseSchema()
+        {
+            //Data Source=127.0.0.1;Initial Catalog=master;User ID=sa;Password=123;Pooling=False;Min Pool Size=1;Max Pool Size=100;Load Balance Timeout=30;Application Name=Afx.Data
+            var connectionStringBuilder = new SqlConnectionStringBuilder(this.ConnectionString);
+            var database = connectionStringBuilder.InitialCatalog;
+            connectionStringBuilder.InitialCatalog = "master";
+            connectionStringBuilder.Remove("Min Pool Size");
+            connectionStringBuilder.Remove("Max Pool Size");
+            connectionStringBuilder.Remove("Load Balance Timeoute");
+            connectionStringBuilder.Pooling = false;
+            return new MsSqlServerDatabaseSchema(new MsSqlDatabase(connectionStringBuilder.ConnectionString), database);
         }
     }
 }
